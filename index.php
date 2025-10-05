@@ -93,7 +93,6 @@ if (isset($_GET['success'])) {
                 </div>
             <?php endif; ?>
 
-            <!-- 👇 Added sign-in section -->
             <div class="login-link">
                 Already have an account? <a href="login.php">Sign in</a>
             </div>
