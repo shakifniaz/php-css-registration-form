@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     header("Location: " . $_SERVER['PHP_SELF'] . "?error=" . urlencode($conn->error));
     exit();
   }
-  
+
   $stmt->close();
 }
 
@@ -86,12 +86,17 @@ if (isset($_GET['success'])) {
                     <input type="submit" name="submit" value="Register" class="btn submit">
                 </div>
             </form>
-            
+
             <?php if (!empty($message)) : ?>
                 <div class="message">
                     <?php echo $message; ?>
                 </div>
             <?php endif; ?>
+
+            <!-- 👇 Added sign-in section -->
+            <div class="login-link">
+                Already have an account? <a href="login.php">Sign in</a>
+            </div>
         </div>
     </div>
 </body>
