@@ -38,7 +38,7 @@ body{
 
 .form-box{
     width: 450px;
-    margin: 0px 10px;
+    margin: 0 auto;
 }
 
 .form-box header{
@@ -88,6 +88,7 @@ body{
 .btn:hover{
     opacity: 0.82;
 }
+
 
 .submit{
     width: 100%;
